@@ -15,18 +15,9 @@ img {
   
 /* variables */
 :root {
-    --hue: 159;
-    --dark: hsl(var(--hue), 41%, 10%);
-    --prymary-color: hsl(var(--hue), 36%, 57%);
-    --primary-color-darker: hsl(var(--hue), 25%, 43%);
-    --secondary-color: hsl(var(--hue), 64%, 88%);
-  
-    --grey: hsl(0, 0%, 46%);
+    --primary-color: hsl(0, 0%, 100%);
     --background1: hsl(0, 0%, 95%);
-    --background2: hsl(0, 0%, 100%);
-  
-    --header-height: 4.5rem;
-  
+    
     -webkit-font-feature-settings: antialiased;
     font-feature-settings: antialiased;
 }
@@ -40,12 +31,14 @@ html {
 body {
     width: 100%;
     min-height: 80vh;
-    background-color: --background1;
+    background-color: var(--background1);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
 }
+
+
 
 .instagram-wrapper {
     display: flex;
@@ -67,6 +60,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    background-color: var(--primary-color);
 }
 
 .instagram-phone img {
