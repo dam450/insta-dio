@@ -1,18 +1,83 @@
+/* reset */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
+}  
+  
+img {
+    height: auto;
+    /* width: 100%; */
+}
+  
+/* variables */
+:root {
+    --hue: 159;
+    --dark: hsl(var(--hue), 41%, 10%);
+    --prymary-color: hsl(var(--hue), 36%, 57%);
+    --primary-color-darker: hsl(var(--hue), 25%, 43%);
+    --secondary-color: hsl(var(--hue), 64%, 88%);
+  
+    --grey: hsl(0, 0%, 46%);
+    --background1: hsl(0, 0%, 95%);
+    --background2: hsl(0, 0%, 100%);
+  
+    --header-height: 4.5rem;
+  
+    -webkit-font-feature-settings: antialiased;
+    font-feature-settings: antialiased;
+}
+  
+/* base */
+  
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     width: 100%;
-    min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    min-height: 80vh;
+    background-color: --background1;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 1;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.instagram-phone img {
+    height: 40rem;
+}
+
+.instagram-continue{
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column; /* inverte o eixo */
+    width: 50%;
+    min-height: 34rem;
 }
