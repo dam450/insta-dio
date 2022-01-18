@@ -17,6 +17,7 @@ img {
 :root {
     --primary-color: hsl(0, 0%, 100%);
     --background1: hsl(0, 0%, 95%);
+    --border: hsl(0, 0%, 83%);
     
     -webkit-font-feature-settings: antialiased;
     font-feature-settings: antialiased;
@@ -55,13 +56,6 @@ body {
     width: 50%;
 }
 
-.group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--primary-color);
-}
 
 .instagram-phone img {
     height: 40rem;
@@ -74,4 +68,36 @@ body {
     flex-direction: column; /* inverte o eixo */
     width: 50%;
     min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid var(--border);
+
+}
+
+.group:nth-child(1){
+    min-height: 19rem;
+}
+
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
 }
