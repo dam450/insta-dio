@@ -61,7 +61,7 @@ body {
 
 
 .instagram-phone img {
-    height: 34rem;
+    height: 45rem;
     /* width: 100%; */
     /* min-height: 34rem; */
 }
@@ -149,6 +149,7 @@ body {
     height: 2.6rem;
     width: 9rem;
     background-size: cover;
+    margin: 0 2px;
 }
 
 .app-download:nth-child(1){
@@ -158,11 +159,6 @@ body {
 .app-download:nth-child(2){
     background-image: url(./img/googleplay-button.png);
 }
-
-/* .get-the-app img {
-    margin: 1rem 0.3rem 0;
-    height: 2rem;
-} */
 
 
 /* MEDIA QUERIES */
